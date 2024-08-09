@@ -1,0 +1,26 @@
+
+.footer-section {
+	padding: 5px 0 16px;
+	overflow: hidden;
+    text-align: center;
+	background: #252525;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	
+}
+.copyright {
+	margin-bottom: 0;
+	font-weight: 500;
+	color: #aeaeae;
+}
+
+.nam{
+    color: rgb(249, 80, 229);
+	text-decoration:none;
+
+}
+.main {
+	position: relative;
+	padding-bottom: 100px; 
+  }

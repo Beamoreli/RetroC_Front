@@ -1,0 +1,20 @@
+<nav class="navbar">
+  <div class="navbar-left">
+    <img src="/logoRetro.png" alt="Logo" class="logo">
+  </div>
+  <div class="navbar-right">
+    <ng-container *ngIf="isLoggedIn(); else logoOnly">
+      <a routerLink="/home" class="nav-item">Home</a>
+      <a routerLink="/games" class="nav-item">Games</a>
+      <div class="dropdown">
+        <button class="nav-item dropdown-button">Minha Conta</button>
+        <div class="dropdown-content">
+          <a routerLink="/edit-profile">Editar Conta</a>
+          <a routerLink="/favorites">Meus Favoritos</a>
+          <a (click)="logout()">Logout</a>
+        </div>
+      </div>
+    </ng-container>
+    <ng-template #logoOnly></ng-template>
+  </div>
+</nav>

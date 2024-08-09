@@ -1,0 +1,94 @@
+.user-profile-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-profile-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .user-details {
+    margin-bottom: 20px;
+  }
+  
+  .user-details div {
+    margin-bottom: 10px;
+  }
+  
+  .user-details label {
+    display: inline-block;
+    width: 100px;
+    font-weight: bold;
+  }
+  
+  .user-details input[type="text"],
+  .user-details input[type="email"],
+  .user-details input[type="password"] {
+    width: calc(100% - 120px); /* Ajusta conforme necessário */
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .user-details input[type="file"] {
+    margin-top: 5px;
+  }
+  
+  .user-details img {
+    max-width: 100px;
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  .button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .button.remove-button {
+    background-color: #dc3545;
+    margin-left: 10px;
+  }
+  
+  .favorite-games {
+    margin-top: 20px;
+  }
+  
+  .favorite-games h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .game-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .game-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .game-list li button.remove-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  p {
+    margin-top: 0;
+  }
+  

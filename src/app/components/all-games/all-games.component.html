@@ -1,0 +1,41 @@
+<div class="container">
+
+    <div class="filters">
+      <h2>Filtros:</h2>
+      <div class="filter">
+        <label for="genre">Gênero:</label>
+        <select id="genre" [(ngModel)]="selectedGenero" (change)="applyFilters()">
+          <option value="">Todos os gêneros</option>
+          <option *ngFor="let genero of generos" [value]="genero.id">{{ genero.nome }}</option>
+        </select>
+      </div>
+      <div class="filter">
+        <label for="console">Console:</label>
+        <select id="console" [(ngModel)]="selectedConsole" (change)="applyFilters()">
+          <option value="">Todos os consoles</option>
+          <option *ngFor="let console of consoles" [value]="console.id">{{ console.nome }}</option>
+        </select>
+      </div>
+    </div>
+  
+  
+    <div class="games-list">
+      <h2>Todos os Jogos</h2>
+      <div *ngIf="games && games.length > 0; else noGames">
+        <div class="game-card" *ngFor="let game of games">
+          <img [src]="game.imagem" alt="{{ game.nome }}" />
+          <h3>{{ game.nome }}</h3>
+          <p>Ano de lançamento: {{ game.anoLancamento}}</p>
+          <button (click)="toggleFavorite(game.id)">
+            <span *ngIf="isFavorite(game.id)">❤️</span>
+            <span *ngIf="!isFavorite(game.id)">🤍</span>
+          </button>
+        </div>
+      </div>
+      <ng-template #noGames>
+        <p>Nenhum jogo encontrado.</p>
+      </ng-template>
+    </div>
+  </div>
+
+  
